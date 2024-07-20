@@ -63,7 +63,6 @@ router.get('/:id',
  * @apiError 409 Email already registered.
  */
 router.post('/',
-  master(),
   body({ CIN, password, name,telephone,ville }),
   create);
 
